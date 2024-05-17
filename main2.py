@@ -14,6 +14,7 @@ for turtle_index in range(0, 6):
     new_turtle.color(colors[turtle_index])
     new_turtle.penup()
     new_turtle.goto(x=-230, y=y_positions[turtle_index])
+    new_turtle.speed('fastest')
     all_turtle.append(new_turtle)
 
 if user_bet:
@@ -31,6 +32,5 @@ while is_race_on:
 
         rand_dist = random.randint(0, 10)
         turtle.forward(rand_dist)
-
 
 scr.exitonclick()
